@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="FizzBuzzTest" time="0.111" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="FizzBuzzTest" time="0.105" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -11,7 +11,7 @@
     <property name="java.vm.specification.version" value="21"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/local/sdkman/candidates/java/21.0.5-ms/lib"/>
-    <property name="sun.java.command" value="/workspaces/FizzBuzz-TDD/target/surefire/surefirebooter-20250222185059707_3.jar /workspaces/FizzBuzz-TDD/target/surefire 2025-02-22T18-50-59_608-jvmRun1 surefire-20250222185059707_1tmp surefire_0-20250222185059707_2tmp"/>
+    <property name="sun.java.command" value="/workspaces/FizzBuzz-TDD/target/surefire/surefirebooter-20250222191426502_3.jar /workspaces/FizzBuzz-TDD/target/surefire 2025-02-22T19-14-26_405-jvmRun1 surefire-20250222191426502_1tmp surefire_0-20250222191426502_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/workspaces/FizzBuzz-TDD/target/test-classes:/workspaces/FizzBuzz-TDD/target/classes:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.0/junit-jupiter-api-5.9.0.jar:/home/codespace/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-commons/1.9.0/junit-platform-commons-1.9.0.jar:/home/codespace/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.0/junit-jupiter-engine-5.9.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-engine/1.9.0/junit-platform-engine-1.9.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -26,7 +26,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/workspaces/FizzBuzz-TDD/target/surefire/surefirebooter-20250222185059707_3.jar"/>
+    <property name="surefire.real.class.path" value="/workspaces/FizzBuzz-TDD/target/surefire/surefirebooter-20250222191426502_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+11-LTS"/>
     <property name="user.name" value="codespace"/>
@@ -53,8 +53,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="When_NumberIsNotMultipleOf3Or5_Then_ReturnNumberAsString" classname="FizzBuzzTest" time="0.051"/>
-  <testcase name="When_MultipleOf3And5_Then_ReturnFizzBuzz" classname="FizzBuzzTest" time="0.002"/>
-  <testcase name="When_MultipleOf5_Then_ReturnBuzz" classname="FizzBuzzTest" time="0.004"/>
-  <testcase name="When_MultipleOf3_Then_ReturnFizz" classname="FizzBuzzTest" time="0.002"/>
+  <testcase name="When_NumberIsNotMultipleOf3Or5_Then_ReturnNumberAsString" classname="FizzBuzzTest" time="0.052"/>
+  <testcase name="When_MultipleOf3And5_Then_ReturnFizzBuzz" classname="FizzBuzzTest" time="0.004"/>
+  <testcase name="When_MultipleOf5_Then_ReturnBuzz" classname="FizzBuzzTest" time="0.001"/>
+  <testcase name="When_MultipleOf3_Then_ReturnFizz" classname="FizzBuzzTest" time="0.004"/>
 </testsuite>

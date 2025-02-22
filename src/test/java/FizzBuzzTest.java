@@ -1,5 +1,6 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+import java.util.concurrent.ThreadLocalRandom;
 
 class FizzBuzzTest {
 
@@ -14,7 +15,16 @@ class FizzBuzzTest {
         String actual = FizzBuzz.fizzbuzz(beginningInput);
 
         // Assert
-        assertEquals(expected, actual);
+        assertEquals(
+            expected, 
+            actual, 
+            String.format(
+                "Fallo: Se esperaba '%s' pero se obtuvo '%s' para el número %d.", 
+                expected, 
+                actual, 
+                beginningInput
+            )
+        );
     }
 
     @Test
@@ -28,7 +38,16 @@ class FizzBuzzTest {
         String actual = FizzBuzz.fizzbuzz(beginningInput);
 
         // Assert
-        assertEquals(expected, actual);
+        assertEquals(
+            expected, 
+            actual, 
+            String.format(
+                "Fallo: Se esperaba '%s' pero se obtuvo '%s' para el múltiplo de 3 %d.", 
+                expected, 
+                actual, 
+                beginningInput
+            )
+        );
     }
 
     @Test
@@ -42,7 +61,16 @@ class FizzBuzzTest {
         String actual = FizzBuzz.fizzbuzz(beginningInput);
 
         // Assert
-        assertEquals(expected, actual);
+        assertEquals(
+            expected, 
+            actual, 
+            String.format(
+                "Fallo: Se esperaba '%s' pero se obtuvo '%s' para el múltiplo de 5 %d.", 
+                expected, 
+                actual, 
+                beginningInput
+            )
+        );
     }
 
     @Test
@@ -50,12 +78,33 @@ class FizzBuzzTest {
     {
         // Arrange
         int beginningInput = 15;
+        int beginningRandomInput = beginningInput * ThreadLocalRandom.current().nextInt(1,  1000); 
         String expected = "FizzBuzz";
 
         // Act
         String actual = FizzBuzz.fizzbuzz(beginningInput);
+        String actualAleatorio = FizzBuzz.fizzbuzz(beginningRandomInput);
 
         // Assert
-        assertEquals(expected, actual);
+        assertEquals(
+            expected, 
+            actual, 
+            String.format(
+                "Fallo: Se esperaba '%s' pero se obtuvo '%s' para el múltiplo %d.", 
+                expected, 
+                actual, 
+                beginningInput
+            )
+        );
+        assertEquals(
+            expected, 
+            actualAleatorio, 
+            String.format(
+                "Fallo: Se esperaba '%s' pero se obtuvo '%s' para el múltiplo aleatorio %d.", 
+                expected, 
+                actualAleatorio, 
+                beginningInput
+            )
+        );
     }
 }
